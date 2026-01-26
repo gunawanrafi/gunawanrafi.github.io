@@ -2361,7 +2361,9 @@ textarea.form-input::-webkit-resizer {
   padding: 3px;
 }
 
-.cv-embed-container iframe {
+.cv-embed-container iframe,
+.cv-embed-container object,
+.cv-embed-container embed {
   width: 100%;
   border: none;
   border-radius: 14px;
@@ -2398,12 +2400,12 @@ textarea.form-input::-webkit-resizer {
   .cv-embed-container iframe {
     height: 600px !important;
   }
-  
+
   .cv-actions {
     flex-direction: column;
     width: 100%;
   }
-  
+
   .cv-download-btn,
   .cv-view-btn {
     width: 100%;
@@ -2414,7 +2416,7 @@ textarea.form-input::-webkit-resizer {
   .cv-embed-container iframe {
     height: 500px !important;
   }
-  
+
   .cv-intro {
     font-size: var(--fs-7);
   }
