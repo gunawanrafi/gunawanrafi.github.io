@@ -2334,3 +2334,88 @@ textarea.form-input::-webkit-resizer {
   width: 24px;
   border-radius: 4px;
 }
+
+
+
+
+/*-----------------------------------*\
+  #CV SECTION
+\*-----------------------------------*/
+
+.cv-intro {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cv-embed-container {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+  margin-bottom: 30px;
+  background: var(--border-gradient-onyx);
+  padding: 3px;
+}
+
+.cv-embed-container iframe {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  background: var(--eerie-black-1);
+  display: block;
+}
+
+.cv-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-download-btn,
+.cv-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.cv-download-btn ion-icon,
+.cv-view-btn ion-icon {
+  font-size: 18px;
+  --ionicon-stroke-width: 50px;
+}
+
+/* Responsive adjustments for CV section */
+@media (max-width: 768px) {
+  .cv-embed-container iframe {
+    height: 600px !important;
+  }
+  
+  .cv-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cv-download-btn,
+  .cv-view-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .cv-embed-container iframe {
+    height: 500px !important;
+  }
+  
+  .cv-intro {
+    font-size: var(--fs-7);
+  }
+}

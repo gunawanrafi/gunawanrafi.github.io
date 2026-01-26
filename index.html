@@ -203,6 +203,10 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>CV</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Location</button>
           </li>
 
@@ -1569,6 +1573,60 @@
         </section>
 
       </article>
+
+
+
+
+
+      <!--
+        ============================================
+        CV PAGE - Resume/CV Viewer
+        Edit: CV file path and descriptions
+        ============================================
+      -->
+      <!--
+        - #CV
+      -->
+
+      <article class="cv" data-page="cv">
+
+        <header>
+          <h2 class="h2 article-title">My CV</h2>
+        </header>
+
+        <section class="cv-viewer">
+          <p class="cv-intro">
+            View my complete professional CV below. You can read it directly on this page or download the PDF for
+            offline viewing.
+          </p>
+
+          <!-- Embedded PDF Viewer -->
+          <div class="cv-embed-container">
+            <iframe src="./assets/images/CV ATS MUHAMMAD RAFI GUNAWAN" type="application/pdf" width="100%" height="850">
+              <p>Your browser does not support PDF viewing. Please download the CV using the button below.</p>
+            </iframe>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="cv-actions">
+            <a href="./assets/images/CV ATS MUHAMMAD RAFI GUNAWAN" download="CV_Muhammad_Rafi_Gunawan.pdf"
+              class="form-btn cv-download-btn">
+              <ion-icon name="download-outline"></ion-icon>
+              <span>Download PDF</span>
+            </a>
+
+            <a href="./assets/images/CV ATS MUHAMMAD RAFI GUNAWAN" target="_blank" class="form-btn cv-view-btn">
+              <ion-icon name="open-outline"></ion-icon>
+              <span>Open in New Tab</span>
+            </a>
+          </div>
+        </section>
+
+      </article>
+
+
+
+
 
       <!--
         ============================================
