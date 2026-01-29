@@ -1913,6 +1913,10 @@ textarea.form-input::-webkit-resizer {
     box-shadow: var(--shadow-5);
   }
 
+  article {
+    padding-top: 60px;
+  }
+
 
 
   /**
